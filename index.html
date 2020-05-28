@@ -116,7 +116,7 @@
 			loc0.style.display = "flex"
 			loc0.style.display = "none"
 		kulak.onclick = function(){
-			enemy_hp = enemy_hp - strength - damage
+			enemy_hp = enemy_hp - strength
 			hero_hp = hero_hp - enemy_damage
 			stats_hp.innerHTML = "hp: " + hero_hp
 			stats_ehp.innerHTML = "hp: " + enemy_hp
@@ -128,7 +128,6 @@
 			if(energy < 1){
 				alert("ты продержался " + volny + " волн")
 				location.reload()
-			}  
 			}  
 			if(enemy_hp < 1){
 				alert("Ты победил драку! у тебя энегргия снизилась на 5, и ты получил 10 рублей")
@@ -164,6 +163,11 @@
 			if(hero_hp < 30){
 				stats_hp.style.backgroundColor = "red"
 			}
+
+
+
+			}  
+			
 		document.querySelector(".menybtn").onclick = function(){
 
 
@@ -171,7 +175,7 @@
 			document.querySelector(".menu").style.display = "none"
 			document.querySelector(".stats").style.display = "block"
 			body.style.backgroundImage = "url(коридор.bmp)"
-			alert("Привет ты в этой играешь за школьника-гопника.Тебе нужно избить как больше школьников в раздевалка(с каждой победой школьники становтся сильнее,а что бы ты стал сильнее тебе надо тренироваться на спортивном зале (тоесть на уроке физры).Пополнять выносливость ты можешь купив печеньки в столовой деньги получаешь победив школьников. Сила увеличивает урон героя и здоровье")
+			alert("Привет ты в этой играешь за школьника-гопника.Тебе нужно избить как больше школьников в раздевалке (с каждой победой школьники становтся сильнее,а что бы ты стал сильнее тебе надо тренироваться на спортивном зале (тоесть на уроке физры).Пополнять выносливость ты можешь купив печеньки в столовой деньги получаешь победив школьников. Сила увеличивает урон героя и здоровье")
 			
 
 			loc0.style.display = "flex"
